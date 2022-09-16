@@ -24,7 +24,7 @@ const Header = () => {
         height: navSize,
         transition: "all 1s",
       }}
-      className="w-full z-50 top-0 sticky"
+      className="bg-redPrimary w-full z-50 top-0 sticky"
     >
       <div className="max-w-screen-xl h-[90px] mx-auto flex justify-between items-center text-white">
         <div className="flex w-1/2 justify-start">
