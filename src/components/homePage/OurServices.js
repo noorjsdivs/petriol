@@ -1,9 +1,9 @@
 import React from "react";
 import LearnMore from "../buttons/LearnMore";
 
-const Services = () => {
+const OurServices = () => {
   return (
-    <section className="mt-6">
+    <div className="mt-6">
       <div className="flex flex-wrap">
         <div className="w-2/4 flex flex-col justify-center items-end">
           <h3 className="font-bold text-[64px] mr-36">Our Services</h3>
@@ -58,8 +58,8 @@ const Services = () => {
           </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 
-export default Services;
+export default OurServices;

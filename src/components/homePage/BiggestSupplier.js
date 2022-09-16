@@ -25,24 +25,44 @@ const BiggestSupplier = () => {
         </div>
       </div>
       <div className="flex justify-between gap-5">
-        <div>
+        <div className="overflow-hidden">
           <picture>
-            <img src={servicesImgOne} loading="lazy" alt="" />
+            <img
+              className="w-full h-full hover:scale-125   duration-500 cursor-pointer"
+              src={servicesImgOne}
+              loading="lazy"
+              alt="servicesImgOne"
+            />
           </picture>
         </div>
-        <div>
+        <div className="overflow-hidden">
           <picture>
-            <img src={servicesImgTwo} loading="lazy" alt="" />
+            <img
+              className="w-full h-full hover:scale-125 duration-500 cursor-pointer"
+              src={servicesImgTwo}
+              loading="lazy"
+              alt="servicesImgTwo"
+            />
           </picture>
         </div>
-        <div>
+        <div className="overflow-hidden">
           <picture>
-            <img src={servicesImgThree} loading="lazy" alt="" />
+            <img
+              className="w-full h-full hover:scale-125 duration-500 cursor-pointer"
+              src={servicesImgThree}
+              loading="lazy"
+              alt="servicesImgThree"
+            />
           </picture>
         </div>
-        <div>
+        <div className="overflow-hidden">
           <picture>
-            <img src={servicesImgFour} loading="lazy" alt="" />
+            <img
+              className="w-full h-full hover:scale-125 duration-500 cursor-pointer"
+              src={servicesImgFour}
+              loading="lazy"
+              alt="servicesImgFour"
+            />
           </picture>
         </div>
       </div>

@@ -2,26 +2,26 @@ export const headerLinks = [
   {
     id: 1001,
     title: "Home",
-    herf: "#",
+    link: "/",
   },
   {
     id: 1002,
     title: "About",
-    herf: "#",
+    link: "/about",
   },
   {
     id: 1003,
     title: "Services",
-    herf: "#",
+    link: "/services",
   },
   {
     id: 1004,
     title: "Gallery",
-    herf: "#",
+    link: "/gallery",
   },
   {
     id: 1005,
     title: "Blog",
-    herf: "#",
+    link: "#",
   },
 ];

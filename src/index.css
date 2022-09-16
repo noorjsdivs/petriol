@@ -3,3 +3,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+  .clientLogoHover {
+    @apply hover:scale-110 duration-500 cursor-pointer hover:bg-lightGray;
+  }
+  .GiCheckMarkStyle {
+    @apply bg-redPrimary text-white w-6 h-6 rounded-full text-center flex justify-center items-center;
+  }
+  .coreServicesIcon {
+    @apply w-[70px] h-[70px] bg-redPrimary text-white flex justify-center items-center rounded-full absolute -top-8 left-40 hover:bg-darkBg border-[1px] border-redPrimary duration-300;
+  }
+  .playButton {
+    @apply absolute w-[80px] h-[80px] rounded-full bg-lightGray hover:bg-white hover:text-redPrimary duration-300 cursor-pointer flex items-center justify-center top-40 left-48 text-darkLight;
+  }
+  .galleryImg {
+    @apply max-w-[400px] h-[400px] object-cover hover:scale-110 duration-500;
+  }
+}

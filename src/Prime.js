@@ -1,28 +1,23 @@
 import React from "react";
-import Footer from "./components/Footers/Footer";
-import Header from "./components/Headers/Header";
-import TopHeader from "./components/Headers/TopHeader";
-import Banner from "./components/home/Banner";
-import BiggestSupplier from "./components/home/BiggestSupplier";
-import Blog from "./components/home/Blog";
-import ClientsLogo from "./components/home/ClientsLogo";
-import LearnMore from "./components/home/LearnMore";
-import Map from "./components/home/Map";
-import Services from "./components/home/Services";
+
+import Banner from "./components/homePage/Banner";
+import BiggestSupplier from "./components/homePage/BiggestSupplier";
+import Blog from "./components/homePage/Blog";
+import ClientsLogo from "./components/homePage/ClientsLogo";
+import LearnMore from "./components/homePage/LearnMore";
+import Map from "./components/homePage/Map";
+import OurServices from "./components/homePage/OurServices";
 
 const Prime = () => {
   return (
     <div className="font-bodyFont">
-      <TopHeader />
-      <Header />
       <Banner />
       <BiggestSupplier />
-      <Services />
+      <OurServices />
       <LearnMore />
       <ClientsLogo />
       <Blog />
       <Map />
-      <Footer />
     </div>
   );
 };
