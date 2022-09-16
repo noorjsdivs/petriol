@@ -8,6 +8,7 @@ module.exports = {
         redPrimary: "#F40404",
         lightGray: "#F0F0F0",
         darkLight: "rgba(0,0,0,.6)",
+        darkBg: "#1F1F1F",
       },
       fontFamily: {
         bodyFont: ["Poppins", "sans-serif"],

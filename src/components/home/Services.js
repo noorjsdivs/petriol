@@ -14,7 +14,11 @@ const Services = () => {
         </div>
         <div
           className="w-2/4 h-[410px] text-white"
-          style={{ background: "url(assets/servicesBgOne.png)" }}
+          style={{
+            background: "url(assets/servicesBgOne.png)",
+            backgroundPosition: "center",
+            backgroundSize: "cover",
+          }}
         >
           <div className="w-full h-full bg-darkLight flex flex-col justify-center px-8">
             <h1 className="text-[36px] font-bold mb-4">
@@ -25,7 +29,11 @@ const Services = () => {
         </div>
         <div
           className="w-2/4 h-[410px] text-white"
-          style={{ background: "url(assets/servicesBgTwo.png)" }}
+          style={{
+            background: "url(assets/servicesBgTwo.png)",
+            backgroundPosition: "center",
+            backgroundSize: "cover",
+          }}
         >
           <div className="w-full h-full bg-darkLight flex flex-col justify-center px-8">
             <h1 className="text-[36px] font-bold mb-4">
@@ -36,7 +44,11 @@ const Services = () => {
         </div>
         <div
           className="w-2/4 h-[410px] text-white"
-          style={{ background: "url(assets/servicesBgThree.png)" }}
+          style={{
+            background: "url(assets/servicesBgThree.png)",
+            backgroundPosition: "center",
+            backgroundSize: "cover",
+          }}
         >
           <div className="w-full h-full bg-darkLight  flex flex-col justify-center px-8">
             <h1 className="text-[36px] font-bold mb-4">
