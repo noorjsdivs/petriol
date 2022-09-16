@@ -5,8 +5,8 @@ import { headerLinks } from "../../constants";
 import ContactButton from "../buttons/ContactButton";
 
 const Header = () => {
-  const [navSize, setnavSize] = useState("10rem");
-  const [navColor, setnavColor] = useState("transparent");
+  const [navSize, setnavSize] = useState("90px");
+  const [navColor, setnavColor] = useState("#F40404");
   const listenScrollEvent = () => {
     window.scrollY > 10 ? setnavColor("#F96868") : setnavColor("#F40404");
     window.scrollY > 10 ? setnavSize("90px") : setnavSize("90px");
@@ -16,7 +16,7 @@ const Header = () => {
     return () => {
       window.removeEventListener("scroll", listenScrollEvent);
     };
-  }, []);
+  }, [navColor]);
   return (
     <nav
       style={{
