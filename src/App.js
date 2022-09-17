@@ -11,7 +11,7 @@ import Blog from "./components/homePage/Blog";
 
 function App() {
   return (
-    <div>
+    <div className="w-full h-auto mx-auto">
       <TopHeader />
       <Header />
       <Routes>
