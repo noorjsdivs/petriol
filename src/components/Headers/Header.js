@@ -52,7 +52,7 @@ const Header = () => {
         </div>
         <div
           onClick={() => setToggle((prev) => !prev)}
-          className="sm:hidden flex flex-1 justify-end items-center cursor-pointer"
+          className="lg:hidden flex flex-1 justify-end items-center cursor-pointer px-3"
         >
           {toggle ? <MdClose size={40} /> : <AiOutlineMenuUnfold size={40} />}
 
