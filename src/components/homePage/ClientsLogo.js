@@ -9,7 +9,7 @@ import {
 const ClientsLogo = () => {
   return (
     <div className="w-full bg-white">
-      <div className="max-w-screen-xl mx-auto flex justify-between items-center py-20">
+      <div className="max-w-screen-xl mx-auto flex flex-col md:flex-row justify-between items-center px-6 lg:px-0 py-20">
         <picture className="overflow-hidden">
           <img
             className="clientLogoHover"

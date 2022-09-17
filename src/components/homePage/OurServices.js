@@ -4,16 +4,16 @@ import LearnMore from "../buttons/LearnMore";
 const OurServices = () => {
   return (
     <div className="mt-6">
-      <div className="flex flex-wrap">
-        <div className="w-2/4 flex flex-col justify-center items-end">
-          <h3 className="font-bold text-[64px] mr-36">Our Services</h3>
-          <p className="font-medium text-base w-[405px] mr-36">
+      <div className="flex flex-col lg:flex-row justify-center items-center flex-wrap gap-6 lg:gap-0">
+        <div className="w-3/4 lg:w-2/4  py-16 flex flex-col justify-center items-start lg:items-center">
+          <h3 className="font-bold text-[46px] md:text-[64px]">Our Services</h3>
+          <p className="font-medium text-base w-full lg:w-[405px]">
             It is a long established fact that a reader will be distracted by
             the readable content of a page when looking at its layout.
           </p>
         </div>
         <div
-          className="w-2/4 h-[410px] text-white"
+          className="w-3/4 lg:w-2/4  h-[410px] text-white"
           style={{
             background: "url(assets/servicesBgOne.png)",
             backgroundPosition: "center",
@@ -28,7 +28,7 @@ const OurServices = () => {
           </div>
         </div>
         <div
-          className="w-2/4 h-[410px] text-white"
+          className="w-3/4 lg:w-2/4  h-[410px] text-white"
           style={{
             background: "url(assets/servicesBgTwo.png)",
             backgroundPosition: "center",
@@ -43,7 +43,7 @@ const OurServices = () => {
           </div>
         </div>
         <div
-          className="w-2/4 h-[410px] text-white"
+          className="w-3/4 lg:w-2/4  h-[410px] text-white"
           style={{
             background: "url(assets/servicesBgThree.png)",
             backgroundPosition: "center",
