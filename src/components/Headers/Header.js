@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { motion } from "framer-motion";
 import { AiOutlineMenuUnfold } from "react-icons/ai";
 import { MdClose } from "react-icons/md";
 import { Link } from "react-router-dom";
@@ -33,12 +34,22 @@ const Header = () => {
       className="bg-redPrimary w-full z-50 top-0 sticky"
     >
       <div className="max-w-screen-xl h-[90px] mx-auto flex justify-between items-center text-white">
-        <div className="flex w-1/2 justify-start pl-4 lg:pl-0">
+        <motion.div
+          initial={{ x: -500, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          transition={{ duration: 1.2 }}
+          className="flex w-1/2 justify-start pl-4 lg:pl-0"
+        >
           <Link to="/">
             <img className="w-[192px] h-[44px] " src={logoImg} alt="logoImg" />
           </Link>
-        </div>
-        <div className="hidden lg:flex justify-end items-center gap-10 md:pr-6 xl:pr-0">
+        </motion.div>
+        <motion.div
+          initial={{ x: 500, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          transition={{ duration: 1.2 }}
+          className="hidden lg:flex justify-end items-center gap-10 md:pr-6 xl:pr-0"
+        >
           <ul className="flex gap-8 font-semibold text-[18px]">
             {headerLinks.map((header) => (
               <li className="hover:text-darkBg duration-300" key={header.id}>
@@ -49,7 +60,7 @@ const Header = () => {
           <Link to="/contact">
             <ContactButton />
           </Link>
-        </div>
+        </motion.div>
         <div
           onClick={() => setToggle((prev) => !prev)}
           className="lg:hidden flex flex-1 justify-end items-center cursor-pointer px-3"

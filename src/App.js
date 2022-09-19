@@ -11,7 +11,7 @@ import Blog from "./components/homePage/Blog";
 
 function App() {
   return (
-    <div className="w-full h-auto mx-auto">
+    <div className="w-full h-auto mx-auto overflow-hidden">
       <TopHeader />
       <Header />
       <Routes>
