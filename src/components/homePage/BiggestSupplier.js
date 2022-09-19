@@ -7,6 +7,24 @@ import {
 } from "../../assets/images/Assets";
 
 const BiggestSupplier = () => {
+  const servicePhoto = [
+    {
+      id: 10001,
+      image: servicesImgOne,
+    },
+    {
+      id: 10002,
+      image: servicesImgTwo,
+    },
+    {
+      id: 10003,
+      image: servicesImgThree,
+    },
+    {
+      id: 10004,
+      image: servicesImgFour,
+    },
+  ];
   return (
     <section className="w-full mx-auto">
       <div className="max-w-screen-xl py-20 mx-auto flex flex-col lg:flex-row justify-start md:gap-10 lg:gap-20 items-center px-6 xl:px-0">
@@ -25,46 +43,18 @@ const BiggestSupplier = () => {
         </div>
       </div>
       <div className="flex justify-between gap-5">
-        <div className="overflow-hidden">
-          <picture>
-            <img
-              className="w-full h-full hover:scale-125   duration-500 cursor-pointer"
-              src={servicesImgOne}
-              loading="lazy"
-              alt="servicesImgOne"
-            />
-          </picture>
-        </div>
-        <div className="overflow-hidden">
-          <picture>
-            <img
-              className="w-full h-full hover:scale-125 duration-500 cursor-pointer"
-              src={servicesImgTwo}
-              loading="lazy"
-              alt="servicesImgTwo"
-            />
-          </picture>
-        </div>
-        <div className="overflow-hidden">
-          <picture>
-            <img
-              className="w-full h-full hover:scale-125 duration-500 cursor-pointer"
-              src={servicesImgThree}
-              loading="lazy"
-              alt="servicesImgThree"
-            />
-          </picture>
-        </div>
-        <div className="overflow-hidden">
-          <picture>
-            <img
-              className="w-full h-full hover:scale-125 duration-500 cursor-pointer"
-              src={servicesImgFour}
-              loading="lazy"
-              alt="servicesImgFour"
-            />
-          </picture>
-        </div>
+        {servicePhoto.map((item) => (
+          <div className="overflow-hidden">
+            <picture>
+              <img
+                className="w-full h-full hover:scale-125   duration-500 cursor-pointer"
+                src={item.image}
+                loading="lazy"
+                alt="servicesImgOne"
+              />
+            </picture>
+          </div>
+        ))}
       </div>
     </section>
   );
